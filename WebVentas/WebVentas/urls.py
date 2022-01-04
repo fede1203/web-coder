@@ -20,5 +20,6 @@ from django.urls.conf import include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('AppInicio/', include('AppInicio.urls')), # relacion entre webventas y appinicio
-    
+    path('AppHogar/', include('AppHogar.urls')),  # relacion webVentas AppHogar
+
 ]
