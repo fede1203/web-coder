@@ -1,8 +1,12 @@
 from django.urls import path
-from AppInicio import views
+from AppInicio import views as viewsInicio
+from AppHogar import views 
+
+
 
 
 urlpatterns = [
-    path('inicio', views.inicio, name= 'Inicio' ),
-    path('base', views.base),
+    path('inicio', viewsInicio.inicio, name= 'Inicio' ),
+    path('blanco', views.blanco, name='Blanco' ),
+ 
 ]
